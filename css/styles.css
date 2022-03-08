@@ -1,0 +1,86 @@
+/* ------- Main Page ------- */
+.title {
+  text-align: center;
+}
+
+.button-container {
+  display: grid;
+}
+
+.button {
+  padding: 50px;
+  background-color: red;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  grid-template-columns: auto;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 15%;
+  box-shadow: 2px 2px black;
+  position: relative;
+}
+
+.button:hover {
+  transform: scale(0.97);
+}
+
+.button-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  line-height: 75px;
+}
+
+/* ------- Entry Form ------- */
+.go-home {
+  margin: 10px auto;
+  width: 100px;
+  overflow: visible;
+}
+
+.go-home-link {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 5px;
+  width: 75px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.go-home:hover {
+  transform: scale(0.97);
+}
+
+.entry-form {
+  display: grid;
+  width: 300px;
+  margin: auto;
+}
+
+.entry-form label,
+.entry-form input {
+  grid-template-columns: 1;
+}
+
+.entry-form label {
+  font-size: 1.2rem;
+}
+
+.entry-text-input {
+  height: 25px;
+}
+
+.submit {
+  height: 40px;
+  margin-top: 10px;
+}
