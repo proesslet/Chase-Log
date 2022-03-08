@@ -18,6 +18,5 @@
             <a href="viewentries.php" class="button-link">View Entries</a>
         </div>
     </div>
-    
 </body>
 </html>

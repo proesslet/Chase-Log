@@ -17,7 +17,6 @@
         }
         mysqli_close($db);
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
