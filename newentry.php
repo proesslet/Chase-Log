@@ -2,20 +2,20 @@
     require("includes/db_connect.inc.php");
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
+
+        $sql = $db->prepare("INSERT INTO chaseentries (chaseDate, City, stateName, County, chaseDescription) VALUES (?, ?, ?, ?, ?)");
+        $sql->bind_param("sssss", $date, $city, $stateName, $county, $chaseDescription);
+
         $date = $_POST['date'];
         $city = $_POST['city'];
         $stateName = $_POST['state'];
         $county = $_POST['county'];
         $chaseDescription = $_POST['description'];
-
-        $sql = "INSERT INTO chaseentries (chaseDate, City, stateName, County, chaseDescription) VALUES ('$date', '$city', '$stateName', '$county', '$chaseDescription')";
-
-        if (mysqli_query($db, $sql)) {
-            // echo "Entry saved";
-        } else {
-            // echo "Error: " . $sql . "<br>" . mysqli_error($db);
-        }
-        mysqli_close($db);
+            
+        $sql->execute;
+        
+        $db->close();
     }
 ?>
 <!DOCTYPE html>

@@ -10,13 +10,9 @@
 <body>
     <h1 class="title">Welcome to my storm chase log!</h1>
     <div class="button-container">
-        <div class="button">
-            <a href="newentry.php" class="button-link">New Entry</a>
-        </div>
-
-        <div class="button">
-            <a href="viewentries.php" class="button-link">View Entries</a>
-        </div>
+        <a href="newentry.php" class="button-link">New Entry</a>
+        <a href="viewentries.php" class="button-link">View Entries</a>
+        
     </div>
 </body>
 </html>
