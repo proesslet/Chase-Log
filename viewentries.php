@@ -8,7 +8,7 @@
     <?php include 'includes/setup.inc.php'; ?>
 </head>
 <body>
-    <h1 class="title">This feature is in progress.</h1>
+    <h1 class="title">Storm Chase Log Entries</h1>
     <div class="go-home">
         <a class="go-home-link" href="index.php">Go home</a>
     </div>
