@@ -81,3 +81,30 @@ body {
   height: 40px;
   margin-top: 10px;
 }
+
+/*----- View Entry Page -------*/
+.entry-table td {
+  text-align: center;
+}
+.entry-table tr {
+  height: 30px;
+}
+.date-column {
+  width: 100px;
+}
+
+.city-column {
+  width: 125px;
+}
+
+.state-column {
+  width: 125px;
+}
+
+.county-column {
+  width: 125px;
+}
+
+.description-column {
+  width: 350px;
+}

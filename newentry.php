@@ -2,10 +2,13 @@
     require("includes/db_connect.inc.php");
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        
 
-        $sql = $db->prepare("INSERT INTO chaseentries (chaseDate, City, stateName, County, chaseDescription) VALUES (?, ?, ?, ?, ?)");
-        $sql->bind_param("sssss", $date, $city, $stateName, $county, $chaseDescription);
+        $stmt = $db->prepare("INSERT INTO chaseentries (chaseDate, City, stateName, County, chaseDescription) VALUES (?, ?, ?, ?, ?)");
+        if($stmt) {
+            $stmt->bind_param("sssss", $date, $city, $stateName, $county, $chaseDescription);
+        } else {
+            echo "MySQL Error: " . $db->error;
+        }
 
         $date = $_POST['date'];
         $city = $_POST['city'];
@@ -13,7 +16,7 @@
         $county = $_POST['county'];
         $chaseDescription = $_POST['description'];
             
-        $sql->execute;
+        $stmt->execute();
         
         $db->close();
     }
