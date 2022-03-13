@@ -18,6 +18,7 @@
         $result = $db->query($sql);
 
         if ($result-> num_rows > 0) {
+            echo "<div class='table-section'>";
             echo "<table class='entry-table'>";
             echo "<tr>";
             echo "<th>Date</th>";
@@ -35,7 +36,8 @@
                 echo "<td class='description-column'>".$row["chaseDescription"]."</td>";
                 echo "</tr>";
             }
-            echo "</table";
+            echo "</table>";
+            echo "</div>";
         } else {
             echo "No results";
         }

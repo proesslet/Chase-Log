@@ -83,6 +83,12 @@ body {
 }
 
 /*----- View Entry Page -------*/
+.table-section {
+  overflow-x: auto;
+}
+.entry-table {
+  margin: auto;
+}
 .entry-table td {
   text-align: center;
 }
