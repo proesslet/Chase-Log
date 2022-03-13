@@ -3,7 +3,7 @@ This is a simple webapp used to log all of my storm chases. It is still a work i
 into a SQL database. Eventually I will add a way to view these entries from the webapp.
 
 Future Features  
--View Entries (In progress - mostly completed, but would like to style it a litle bit more)
+-View Entries (In progress - mostly completed, but would like to style it a litle bit more)  
 -Sort Entries  
 -Edit Entries(?)  
 -More details for entries (number of tornadoes, max hail size, etc)  
