@@ -88,9 +88,15 @@ body {
 }
 .entry-table {
   margin: auto;
+  border-collapse: collapse;
 }
 .entry-table td {
   text-align: center;
+  padding: 8px;
+  margin: 0;
+}
+.entry-table tr:nth-child(even) {
+  background-color: #dfdfdf;
 }
 .entry-table tr {
   height: 30px;
